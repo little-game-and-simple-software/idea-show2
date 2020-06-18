@@ -4,6 +4,16 @@
   function upload()
   {
  console.log("aaaaa")
+ var  result=confirm("暂不支持直接投稿，请将你的创意和想法发送到github的issue里面")
+ console.log(result)
+ if (result)
+ {
+	window.open("https://github.com/little-game-and-simple-software/idea-show/issues")
+ }
+ else
+ {
+	alert("欢迎下次投稿")
+ }
   }
   </script>
   <meta charset="utf-8">
