@@ -1,0 +1,40 @@
+<html>
+  <head>
+  <script>
+  function upload()
+  {
+ console.log("aaaaa")
+ var  result=confirm("暂不支持直接投稿，请将你的创意和想法发送到github的issue里面")
+ console.log(result)
+ if (result)
+ {
+	window.open("https://github.com/little-game-and-simple-software/idea-show/issues")
+ }
+ else
+ {
+	alert("欢迎下次投稿")
+ }
+  }
+  </script>
+  <meta charset="utf-8">
+    <title>投稿</title>
+  </head>
+<body>
+<div>
+<button style="" onclick="upload()">投稿</button>
+暂时不支持直接投稿
+<br/>
+需要使用github 和git工具进行投稿
+<br/>
+如果不会用可以b站找教程
+<br/>
+投稿规范 创建名称为 用户名_ideas.txt文件 并写入自己的想法或者创意
+<br/>
+注意 一旦你决定投稿 就意味着你愿意将自己的知识分享给大家 
+<br/>
+本站只有我自己一个人在做 如果有会编程的 也可以合伙帮帮我
+<br/>
+我是个还没工作的学生 没钱买服务器 就先用github pages试试看
+</div>
+</body>
+</html>
