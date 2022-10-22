@@ -1,18 +1,56 @@
-div
+
+body
 {
-	font-size:15pt;
-	text-indent:50px;
-	white-space:pre;
+	background-image: linear-gradient(to right, #a8edea 0%, #fed6e3 100%);
 }
-h1
+
+#user_ideas
 {
-	text-align:center;
+	box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+	border-radius: 1.6em;
+	background-image: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
+	padding: 1em;
+	margin: 1em;
 }
-a.user_main_page
+
+.title
 {
-	text-align:center;
+	background: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+	-webkit-background-clip: text;
+	color: transparent;
+	text-shadow: 3px 5px 24px #44107A;
+	text-align: center;
 }
-h6
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a {
+  flex: auto;
+  border: 1px solid transparent;
+  border-radius: 1em;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  margin: 0.4em;
+  padding-left: 0.8em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+  flex: auto;
+  border: 1px solid #231557;
+  border-radius: 1em;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  margin: 0.4em;
+  padding-left: 0.8em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.background_music
 {
-		text-align:center;
+	display: none;
 }
