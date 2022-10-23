@@ -116,6 +116,42 @@ nav a:hover
 	
 }
 
+.idea_button
+{
+	display: flex;
+	flex-wrap: nowrap;
+	margin-bottom: 0.5em;
+	padding-left: 1em;
+	padding-right: 0.7em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	border: 1px solid #44107A;
+	border-radius: 1em;
+	text-decoration: none;
+	color: #281429;
+	background: transparent;
+	cursor: pointer;
+	transition: 0.2s all ease-out;
+}
+
+.idea_button:hover
+{
+	opacity: 0.8;
+}
+
+.idea_button::before
+{
+	content: '💡';
+	margin-right: 0.3em;
+}
+
+.idea_button::after
+{
+	content: '👉';
+	margin-left: auto;
+	
+}
+
 #idea_content
 {
 	box-shadow: 1em 10px 40px -10px rgba(0,64,128,.2);
