@@ -74,7 +74,7 @@ nav a:hover
 	flex-direction: column;
 }
 
-.idea_box a
+.idea_box button
 {
 	display: flex;
 	flex-wrap: nowrap;
@@ -87,31 +87,48 @@ nav a:hover
 	border-radius: 1em;
 	text-decoration: none;
 	color: #281429;
+	background: transparent;
+	cursor: pointer;
 	transition: 0.2s all ease-out;
 }
 
-.idea_box a:hover
+.idea_box button:hover
 {
 	opacity: 0.8;
 	padding-right: 1em;
 }
 
-.idea_box a::before
+.idea_box button:focus
+{
+	padding-right: 1em;
+}
+
+.idea_box button::before
 {
 	content: '💡';
 	margin-right: 0.3em;
 }
 
-.idea_box a::after
+.idea_box button::after
 {
 	content: '👉';
 	margin-left: auto;
 	
 }
 
+#idea_content
+{
+	box-shadow: 1em 10px 40px -10px rgba(0,64,128,.2);
+	border-radius: 1.6em;
+	background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+	padding: 1em;
+	margin: 0.7em;
+	transition: 0.3s all ease-in-out;
+}
+
 .tip_box
 {
-	box-shadow: 1em 10px 40px -10px rgba(0,64,128,.5);
+	box-shadow: 1em 10px 40px -10px rgba(0,64,128,.2);
 	border-radius: 1.6em;
 	background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
 	padding: 1em;
