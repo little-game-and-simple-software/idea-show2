@@ -27,9 +27,12 @@ function my_load()
     
 }
 
+var former_idea_content = ""
+
 function set_idea_content(url)
 {
 	var idea_content = document.getElementById("idea_content")
+	former_idea_content = idea_content.innerHTML
 	var request = new XMLHttpRequest()
 	request.open("get",url,true)
 	request.onload=function()
@@ -51,6 +54,13 @@ function set_idea_content(url)
 	    }
 	}
 	request.send()
+}
+
+function back_idea_content()
+{
+	var idea_content = document.getElementById("idea_content")
+	console.log(former_idea_content)
+	idea_content.innerHTML = former_idea_content
 }
 
 my_load()
