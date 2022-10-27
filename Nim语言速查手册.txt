@@ -1,0 +1,49 @@
+一、基本数据类型
+void
+int
+float
+double
+long
+sttring
+cstring
+seq (可变数组 序列)
+T 泛型
+char 字符
+
+二、基本语法
+1. var a:int = 声明变量，但不赋值，不存值时需显示声明变量类型
+   var a = 1 声明变量并存值，此时可省略类型声明（Nim在编译时自带类型推导）
+   var a:int = 1 这个是上面的标准完整写法
+   const a = 1 声明常量，常量不可变，且必须在声明时存值
+   let a = 1 介于var和const之间作用的语句，类似js语言的let
+2. 导出变量（用于外部Nim或模块调用）
+  var a* = 1
+2. 函数
+  proc a() = 
+    eccho "hello"
+  函数返回值
+  proc a():string = return "hello"
+  导出函数
+  proc a*():string = return "hello"
+  函数编译指示
+  proc a():string{.importc.} = return "hello"
+3. 宏函数
+  macro a():string = ?
+4. 细节补充
+  执行后丢弃返回值
+discard a()
+// 函数前向声明（类C语法)
+  proc a():string
+  a()
+  proc a() = echo "hello"
+5. template模板
+6. 导入其他Nim文件作为模块
+import moduleB // 将模块B导入当前命名空间
+include moduleB // 仅包含，类似C的#include
+7. 枚举
+type
+  IT:Enum = {a,b,c,d}
+8. 字典（复合类型）
+9. 元祖 （复合类型）
+int string float
+8. 可以共存不不同类型
