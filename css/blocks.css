@@ -170,3 +170,35 @@ nav a:hover
 	padding: 1em;
 	margin: 0.7em;
 }
+
+.saying_box
+{
+	box-shadow: 1em 10px 40px -10px rgba(0,64,128,.2);
+	border-radius: 1.6em;
+	background-image: linear-gradient(to top, #bdc2e8 0%, #e8e3d5 1%, #e9d9cd 100%);
+	padding: 0.1em 1em;
+	margin: 0.7em;
+}
+
+.saying_box h2
+{
+	box-shadow: 0.5em 10px 40px -10px rgba(0,64,128,.15);
+	border-radius: 1.6em;
+	background-image: linear-gradient(to top, #bd32e8 0%, #e8c783 1%, #f8ebb3 100%);
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	text-align: center;
+}
+
+.saying_box p
+{
+	font-size: 1.25em;
+	font-family: STZhongsong;
+	font-weight: 100;
+	text-align: center;
+}
+
+.saying_box p::before
+{
+	content: '📖 ';
+}
