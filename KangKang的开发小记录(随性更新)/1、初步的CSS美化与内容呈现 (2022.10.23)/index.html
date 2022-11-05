@@ -1,0 +1,110 @@
+<!DOCTYPE html><html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" id="themeDefaultStyle" href="stage/build/export/base.css?2.4.9"/>
+    <link rel="stylesheet" type="text/css" id="themeStyle" href="appearance/themes/daylight/theme.css?2.4.9"/>
+    <title>C:\Users\ws200\Documents\idea-show\publish\1、初步的CSS美化与内容呈现 (2022.10.23) - 思源笔记  v2.4.9</title>
+    <style>
+        body {background-color: var(--b3-theme-background);color: var(--b3-theme-on-background)}
+        .b3-typography, .protyle-wysiwyg, .protyle-title {font-size:16px !important}
+.b3-typography code:not(.hljs), .protyle-wysiwyg span[data-type~=code] { font-variant-ligatures: none }
+.li > .protyle-action {height:34px;line-height: 34px}
+.protyle-wysiwyg [data-node-id].li > .protyle-action ~ .h1, .protyle-wysiwyg [data-node-id].li > .protyle-action ~ .h2, .protyle-wysiwyg [data-node-id].li > .protyle-action ~ .h3, .protyle-wysiwyg [data-node-id].li > .protyle-action ~ .h4, .protyle-wysiwyg [data-node-id].li > .protyle-action ~ .h5, .protyle-wysiwyg [data-node-id].li > .protyle-action ~ .h6 {line-height:34px;}
+.protyle-wysiwyg [data-node-id].li > .protyle-action:after {height: 16px;width: 16px;margin:-8px 0 0 -8px}
+.protyle-wysiwyg [data-node-id].li > .protyle-action svg {height: 14px}
+.protyle-wysiwyg [data-node-id] [spellcheck="false"] {min-height:26px;}
+.protyle-wysiwyg [data-node-id] {}
+.protyle-wysiwyg .li {min-height:34px}
+.protyle-gutters button svg {height:26px}
+.protyle-wysiwyg img.emoji, .b3-typography img.emoji {width:18px}
+.protyle-wysiwyg .h1 img.emoji, .b3-typography h1 img.emoji {width:35px}
+.protyle-wysiwyg .h2 img.emoji, .b3-typography h2 img.emoji {width:31px}
+.protyle-wysiwyg .h3 img.emoji, .b3-typography h3 img.emoji {width:27px}
+.protyle-wysiwyg .h4 img.emoji, .b3-typography h4 img.emoji {width:25px}
+.protyle-wysiwyg .h5 img.emoji, .b3-typography h5 img.emoji {width:22px}
+.protyle-wysiwyg .h6 img.emoji, .b3-typography h6 img.emoji {width:20px}
+    </style>
+</head>
+<body>
+<div class="protyle-wysiwyg protyle-wysiwyg--attr" style="max-width: 800px;margin: 0 auto;" id="preview"><div data-subtype="h1" data-node-id="20221029203812-lwcr828" data-type="NodeHeading" class="h1" title="1、初步的CSS美化与内容呈现 (2022.10.23)" updated="20221105152755" id="20221029203812-lwcr828"><div contenteditable="false" spellcheck="false">1、初步的CSS美化与内容呈现 (2022.10.23)</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029205602-y8lef2m" data-type="NodeParagraph" class="p" id="20221029205602-y8lef2m" updated="20221029205607"><div contenteditable="false" spellcheck="false">下图是最终结果：</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029205318-8a6jnee" data-type="NodeParagraph" class="p" id="20221029205318-8a6jnee" updated="20221029205537"><div contenteditable="false" spellcheck="false"><span contenteditable="false" data-type="img" class="img" style="max-width: 665px;"><span> </span><span><span class="protyle-action protyle-icons"><span><svg class="svg"><use xlink:href="#iconMore"></use></svg></span></span><img src="assets/image-20221029205512-tga61zx.png" data-src="assets/image-20221029205512-tga61zx.png" alt="image" title="忽略最后的“名言警句”" /><span class="protyle-action__drag"></span><span class="protyle-action__title">忽略最后的“名言警句”</span></span><span> </span></span>​</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029203812-r1lvjry" data-type="NodeParagraph" class="p" id="20221029203812-r1lvjry" updated="20221029204907"><div contenteditable="false" spellcheck="false">	现代的网页一般都会采用圆角+渐变色的设计，所以我的CSS美化思路也是尽可能加入圆角和渐变色。</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029204911-f68ubfv" data-type="NodeParagraph" class="p" id="20221029204911-f68ubfv" updated="20221029205306"><div contenteditable="false" spellcheck="false"><span data-type="s text" style="font-size: 14px;">	虽然我翻了一圈没找到这种风格的网站，但是我就是觉得圆角加渐变色很好看</span></div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029205310-xyhzw2q" data-type="NodeParagraph" class="p" id="20221029205310-xyhzw2q" updated="20221029205645"><div contenteditable="false" spellcheck="false">首先看看原始的页面长什么样：</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029205645-xhh9ftx" data-type="NodeParagraph" class="p" id="20221029205645-xhh9ftx" updated="20221029210607"><div contenteditable="false" spellcheck="false"><span contenteditable="false" data-type="img" class="img" style="max-width: 665px;"><span> </span><span><span class="protyle-action protyle-icons"><span><svg class="svg"><use xlink:href="#iconMore"></use></svg></span></span><img src="assets/image-20221029210538-a9bphmt.png" data-src="assets/image-20221029210538-a9bphmt.png" alt="image" title="有亿点简陋" /><span class="protyle-action__drag"></span><span class="protyle-action__title">有亿点简陋</span></span><span> </span></span>​</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029210608-w57gk7h" data-type="NodeParagraph" class="p" id="20221029210608-w57gk7h" updated="20221029211459"><div contenteditable="false" spellcheck="false">	我们从上往下看，首先映入眼帘的是一串<span data-type="s">神秘</span>的代码&quot;[object XMLHttpRequest]&quot;。稍加思考就能猜到大概率是XHR的东西(置顶的想法)在呈现的时候出了点差错，直接把object输出到了网页里。当然咱们的主要目的是CSS美化，这个小问题就浅浅地删掉对应输出语句来修复吧。</div><div class="protyle-attr" contenteditable="false"></div></div><div data-subtype="h6" data-node-id="20221029212028-odheg0f" data-type="NodeHeading" class="h6" id="20221029212028-odheg0f" updated="20221029212135"><div contenteditable="false" spellcheck="false">现在开始第一个板块的CSS编辑——置顶？想法盒子</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029212136-q2exje5" data-type="NodeParagraph" class="p" id="20221029212136-q2exje5" updated="20221029212330"><div contenteditable="false" spellcheck="false">	原始页面直接在JS里面用CreateElement把内容插进去，<span data-type="s">这可不是咱常用的方法。</span></div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029212339-b1c77tn" data-type="NodeParagraph" class="p" updated="20221029213810" id="20221029212339-b1c77tn"><div contenteditable="false" spellcheck="false">为了更方便地掌控它的样式，我们还是改为固定一个div，然后用js动态修改这个div内容的模式吧。下面来一段code:</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029213831-aad1l3j" data-type="NodeCodeBlock" class="code-block" updated="20221029214027" id="20221029213831-aad1l3j"><div class="protyle-action"><span class="protyle-action--first protyle-action__language" contenteditable="false">html</span><span class="fn__flex-1"></span><span class="protyle-icon protyle-icon--only protyle-action__copy"><svg><use xlink:href="#iconCopy"></use></svg></span></div><div class="hljs" contenteditable="false" spellcheck="false">&lt;div id=&quot;user_ideas&quot;&gt;
+	
+&lt;/div&gt;
+</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029210901-qnbkp8y" data-type="NodeParagraph" class="p" id="20221029210901-qnbkp8y" updated="20221029214804"><div contenteditable="false" spellcheck="false"><span data-type="text em" style="font-size: 14px;">tip: 在支持的编辑器内可以这样快速输入以上内容 div#user_ideas</span></div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029214816-guw16rd" data-type="NodeCodeBlock" class="code-block" id="20221029214816-guw16rd" updated="20221029215100"><div class="protyle-action"><span class="protyle-action--first protyle-action__language" contenteditable="false">javascript</span><span class="fn__flex-1"></span><span class="protyle-icon protyle-icon--only protyle-action__copy"><svg><use xlink:href="#iconCopy"></use></svg></span></div><div class="hljs" contenteditable="false" spellcheck="false">//从github读取txt文件
+function my_load()
+{
+    var user_ideas = document.getElementById(&quot;user_ideas&quot;)
+    var request = new XMLHttpRequest()
+	request.open(&quot;get&quot;,&quot;ideas.txt&quot;,true)
+    request.onload=function()
+    {
+        if (request.readyState===request.DONE)
+        {
+            if(request.status===200)
+            {
+		var final_content = request.responseText.replaceAll(&quot;\n&quot;, &quot;&lt;br&gt;&quot;)
+                user_ideas.innerHTML = final_content
+            }
+        
+        }
+    }
+    request.send()
+}
+myload()
+</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029214722-3ir35np" data-type="NodeParagraph" class="p" id="20221029214722-3ir35np" updated="20221029215801"><div contenteditable="false" spellcheck="false">	下面来解释一下上面的JS代码。首先我们通过id获取了我们在上面定义的一个用于存放用户想法的div，并把它赋值给了一个变量以便后续使用。然后我们创造了一个XHR实例来获取我们设置好的ideas.txt里面的数据。最后是一个判断，当成功获取内容时，把获取到的内容放进我们刚才定义好的想法盒子内部。</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029215804-rbwtt9n" data-type="NodeParagraph" class="p" id="20221029215804-rbwtt9n" updated="20221029215952"><div contenteditable="false" spellcheck="false">	在这里有一点需要注意，因为我们在txt，或者是一般的文本文件里面换行符都是\n(看不到)。而HTML里面的换行是&lt;br&gt;标签，所以我们需要把文本里面所有的\n都替换为&lt;br&gt;才能实现换行的效果。</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029220008-biwocvo" data-type="NodeParagraph" class="p" id="20221029220008-biwocvo" updated="20221029220150"><div contenteditable="false" spellcheck="false">	在得到内容后，当然是喜闻乐见的样式编辑环节。我这次用到了一个比较不错的网站，可以找到一些看起来不错的渐变配色。当然也可以自己配，<span data-type="s">或者是抄其他网站</span>。</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029220542-z27mg3j" data-type="NodeParagraph" class="p" id="20221029220542-z27mg3j" updated="20221029220700"><div contenteditable="false" spellcheck="false"><span contenteditable="false" data-type="img" class="img" style="max-width: 665px;"><span> </span><span><span class="protyle-action protyle-icons"><span><svg class="svg"><use xlink:href="#iconMore"></use></svg></span></span><img src="assets/image-20221029220641-somuvb4.png" data-src="assets/image-20221029220641-somuvb4.png" alt="image" title="应该有更好的配色网站" /><span class="protyle-action__drag"></span><span class="protyle-action__title">应该有更好的配色网站</span></span><span> </span></span>​</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029220115-sa5f1pf" data-type="NodeParagraph" class="p" updated="20221029220916" id="20221029220115-sa5f1pf"><div contenteditable="false" spellcheck="false">下面上CSS代码:</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029220916-b900cn1" data-type="NodeCodeBlock" class="code-block" updated="20221029220929" id="20221029220916-b900cn1"><div class="protyle-action"><span class="protyle-action--first protyle-action__language" contenteditable="false">css</span><span class="fn__flex-1"></span><span class="protyle-icon protyle-icon--only protyle-action__copy"><svg><use xlink:href="#iconCopy"></use></svg></span></div><div class="hljs" contenteditable="false" spellcheck="false">#user_ideas
+{
+	box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+	border-radius: 1.6em;
+	background-image: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
+	padding: 1em;
+	margin: 1em;
+}
+</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029220932-dhggjkc" data-type="NodeParagraph" class="p" id="20221029220932-dhggjkc" updated="20221029220953"><div contenteditable="false" spellcheck="false">效果:</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029220954-pzz0u40" data-type="NodeParagraph" class="p" updated="20221029221055" id="20221029220954-pzz0u40"><div contenteditable="false" spellcheck="false"><span contenteditable="false" data-type="img" class="img" style="max-width: 665px;"><span> </span><span><span class="protyle-action protyle-icons"><span><svg class="svg"><use xlink:href="#iconMore"></use></svg></span></span><img src="assets/image-20221029221035-5vw7l45.png" data-src="assets/image-20221029221035-5vw7l45.png" alt="image" title="不包括背景" /><span class="protyle-action__drag"></span><span class="protyle-action__title">不包括背景</span></span><span> </span></span>​</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221029221057-jklg0c7" data-type="NodeParagraph" class="p" updated="20221105151148" id="20221029221057-jklg0c7"><div contenteditable="false" spellcheck="false">	上文的css代码中，box-shadow表示阴影，border-radius则是圆角的半径，background-image为背景图像，这里设置的是渐变色，padding和margin分别是内边距和外边距。</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221105151149-8wceb02" data-type="NodeParagraph" class="p" id="20221105151149-8wceb02" updated="20221105151344"><div contenteditable="false" spellcheck="false"><span data-type="s">	虽然看起来有点花里胡哨</span>，<span data-type="s">但是不用心去欣赏的话还是感觉挺不错的。</span></div><div class="protyle-attr" contenteditable="false"></div></div><div data-subtype="h6" data-node-id="20221105151347-xyy4bpv" data-type="NodeHeading" class="h6" id="20221105151347-xyy4bpv" updated="20221105151511"><div contenteditable="false" spellcheck="false">接下来就是给标题上绚丽的颜色了！</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221105151513-iyumivg" data-type="NodeParagraph" class="p" id="20221105151513-iyumivg" updated="20221105151519"><div contenteditable="false" spellcheck="false">先上图</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221105151520-19iq842" data-type="NodeParagraph" class="p" id="20221105151520-19iq842" updated="20221105151730"><div contenteditable="false" spellcheck="false"><span contenteditable="false" data-type="img" class="img"><span> </span><span><span class="protyle-action protyle-icons"><span><svg class="svg"><use xlink:href="#iconMore"></use></svg></span></span><img src="assets/image-20221105151729-pu3tfjr.png" data-src="assets/image-20221105151729-pu3tfjr.png" alt="image" /><span class="protyle-action__drag"></span><span class="protyle-action__title"></span></span><span> </span></span>​</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221105151734-1sawg86" data-type="NodeParagraph" class="p" updated="20221105152023" id="20221105151734-1sawg86"><div contenteditable="false" spellcheck="false">	<span data-type="s">紫红交融的炫酷颜色直叫人眼前一亮</span>。如上文一样的设计风格，渐变色+阴影。渐变色是从那个配色网站上面取的，但是自己可以微调一下。下面上css代码。</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221105152025-4to1vjh" data-type="NodeCodeBlock" class="code-block" id="20221105152025-4to1vjh" updated="20221105152521"><div class="protyle-action"><span class="protyle-action--first protyle-action__language" contenteditable="false">css</span><span class="fn__flex-1"></span><span class="protyle-icon protyle-icon--only protyle-action__copy"><svg><use xlink:href="#iconCopy"></use></svg></span></div><div class="hljs" contenteditable="false" spellcheck="false">.title
+{
+	background: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+	background-clip: text; /* 只在有文字的区域显示背景 */
+	color: transparent; /* 文字颜色设为透明色 */
+	text-shadow: 3px 5px 24px #44107A;
+	text-align: center;
+}
+</div><div class="protyle-attr" contenteditable="false"></div></div><div data-node-id="20221105152445-kzw3p2d" data-type="NodeParagraph" class="p" updated="20221105152755" id="20221105152445-kzw3p2d"><div contenteditable="false" spellcheck="false">	目前css里面并不能直接给文字设置渐变色，但是我们可以使用一些技巧来达到渐变色文字的效果。上面的css代码里首先把背景剪切到了文字的区域（即只在有文字的区域显示背景），然后再把文字的颜色设置为了透明，这样文字呈现的颜色就是背景的颜色，而背景可以设置为渐变色，这样就达到了给文字设置渐变色的目的。</div><div class="protyle-attr" contenteditable="false"></div></div></div>
+<script src="appearance/icons/material/icon.js?2.4.9"></script>
+<script src="stage/build/export/protyle-method.js?2.4.9"></script>
+<script src="stage/protyle/js/lute/lute.min.js?2.4.9"></script>    
+<script>
+    window.siyuan = {
+      config: {
+        appearance: { mode: 0, codeBlockThemeDark: "base16/dracula", codeBlockThemeLight: "github" },
+        editor: { 
+          codeLineWrap: true,
+          codeLigatures: false,
+          plantUMLServePath: "https://www.plantuml.com/plantuml/svg/~1",
+          codeSyntaxHighlightLineNum: true,
+          katexMacros: JSON.stringify({}),
+        }
+      },
+      languages: {copy:"复制"}
+    };
+    const previewElement = document.getElementById('preview');
+    Protyle.highlightRender(previewElement, "stage/protyle");
+    Protyle.mathRender(previewElement, "stage/protyle", false);
+    Protyle.mermaidRender(previewElement, "stage/protyle");
+    Protyle.flowchartRender(previewElement, "stage/protyle");
+    Protyle.graphvizRender(previewElement, "stage/protyle");
+    Protyle.chartRender(previewElement, "stage/protyle");
+    Protyle.mindmapRender(previewElement, "stage/protyle");
+    Protyle.abcRender(previewElement, "stage/protyle");
+    Protyle.plantumlRender(previewElement, "stage/protyle");
+    Protyle.mediaRender(previewElement);
+    document.querySelectorAll(".protyle-action__copy").forEach((item) => {
+      item.addEventListener("click", (event) => {
+            navigator.clipboard.writeText(item.parentElement.nextElementSibling.textContent.trimEnd());
+            event.preventDefault();
+            event.stopPropagation();
+      })
+    });
+</script></body></html>
