@@ -27,6 +27,11 @@ function my_load()
     
 }
 
+function jump_to(url)
+{
+	window.open(url,"_blank")
+}
+
 var former_idea_content = ""
 
 function set_idea_content(url)
@@ -62,5 +67,6 @@ function back_idea_content()
 	console.log(former_idea_content)
 	idea_content.innerHTML = former_idea_content
 }
+
 
 my_load()
