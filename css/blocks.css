@@ -57,6 +57,17 @@ body
 	content: " 🎵";
 }
 
+.music_box p 
+{
+	display: flex;
+	align-items: center;
+	flex: auto;
+	justify-content: space-around;
+	border: #299c5d 0.1em solid;
+	border-radius: 2em;
+	font-size: 1.5em;
+}
+
 nav 
 {
 	  flex-shrink: 0;
