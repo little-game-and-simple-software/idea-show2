@@ -60,6 +60,15 @@ function set_idea_content(url)
 	}
 	request.send()
 }
+/* 
+function set_idea_iframe(url)
+{
+	var idea_content = document.getElementById("idea_content")
+	former_idea_content = idea_content.innerHTML
+	var iframe_html = `<iframe allowfullscreen="allowfullscreen" width="100%"  src='${url}'></iframe>`
+	idea_content.innerHTML = iframe_html
+}
+ */
 
 function back_idea_content()
 {

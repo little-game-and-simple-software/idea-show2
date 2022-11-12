@@ -27,6 +27,36 @@ body
 	text-align: center;
 }
 
+.music_box
+{
+	box-shadow: 1em 10px 40px -10px rgba(0,64,128,.2);
+	border-radius: 1.6em;
+	background-image: linear-gradient(to top, #bdc2e8 0%, #7de6a4 1%, #cbe9c5 100%);
+	padding: 0.1em 1em;
+	margin: 0.7em;
+	font-size: 0.8em;
+}
+
+.music_box h2
+{
+	box-shadow: 0.5em 10px 40px -10px rgba(0,64,128,.15);
+	border-radius: 1.6em;
+	background-image: linear-gradient(to top, #03a509 0%, #b6ecf0 1%, #d1ece9 100%);
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	text-align: center;
+}
+
+.music_box h2::before
+{
+	content: "🎵 ";
+}
+
+.music_box h2::after
+{
+	content: " 🎵";
+}
+
 nav 
 {
 	  flex-shrink: 0;
