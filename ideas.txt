@@ -1,7 +1,0 @@
-用户a1exwang的想法 \n
-1.做一个30min长的音乐，并且不完全重复，不奇怪\n
-2.在 soundbetter.com 或者www.airgigs.com这类租赁网站上，租一个歌手录 kawaii bass 采样音效\n
-3.用三个和弦，但允许和弦类型的变化，做一首音乐，并且不显得单调。比如只用 C，F，G 三个和弦，但可以用C7sus Fmaj7 G9sus/C 这些，但不能用Am，Em \n
-4.用 vocal chop + harmor resynthesis 做 lead\n
-5.一条旋律线上相邻的音符交替使用不同的lead演奏（比如square，super saw，sine，pluck）。例如 HoneyComeBear - Natsuzora(ナツゾラ)(20XX Remix) \n
-6.用 vocal chop 去 sidechain 压缩其他音色，或者甚至把 vocal chop 当打击乐器用\n
