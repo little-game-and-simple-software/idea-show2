@@ -17,8 +17,7 @@ function set_idea_content(url)
 	{
 	    console.log(request.status)
 	    console.log("状态"+request.status)
-	    // document.write("状态"+request.status)
-	    console.log(request.responseText)
+	    // console.log(request.responseText)
 	    out=request.responseText
 	    if (request.readyState===request.DONE)
 	    {
@@ -41,7 +40,7 @@ function back_idea_content()
 	idea_content.innerHTML = former_idea_content
 }
 
-// ！！！ 重点 ！！！
+// 1010 111111111
 function show_important(url)
 {
     var user_ideas = document.getElementById("user_ideas")
@@ -68,4 +67,4 @@ function show_important(url)
     request.send()
     
 }
-show_important("important.html")
+// show_important("important.html")
