@@ -6,6 +6,26 @@
 		<title>idea-show</title>
 		<link rel="stylesheet" type="text/css" href="css/blocks.css" />
 		<link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
+		<!-- 根据大道至简，一开一关，这里做两种特殊的css，一个用于紧要关头救世，一个用于普通环境下的交流 -->
+		<!-- 道不是用来讲的，是用来悟的，是用来行的 -->
+		<style>
+			/* 1010 11111 */
+			.ProtectTheWorld
+			{
+				color:red;
+			}
+			/* 1010 00000 */
+			.NormalBeautifulWorld
+			{
+				color:black;
+			}
+			/* 高亮用1010 1111111 */
+			.high_light
+			{
+				color:red;
+			}
+		</style>
+		
 	</head>
 	<body>
 		<div id="user_ideas">
@@ -15,17 +35,15 @@
 			<h1 class="title">
 				idea-show 创意与思想交流社区
 			</h1>
-			<p>实时在线人数：未知</p>
-			<p>我还没复制别人的这种功能的js(2333)</p>
-			
-			<div class="music_box">
-				<h2>背景音乐</h2>
-				<h3>请根据自己的内心选择合适的音乐，但是如果你最近情绪不好，睡眠不好，而且最近有和别人吵架的话，请不要听Noesis03——《轮回》那首音乐，请听类似于后面两首风格的音乐</h3>
-				<p>《轮回》——出自Noesis03游戏<audio class="background_music" src="bgm/noesis03-title.m4a" controls="true" loop></audio></p>
-				<p>《蓝莲花》——许巍<audio class="background_music" src="改善不良情绪的传记/bgm/蓝莲花_许巍.ogg" controls="true" loop></audio></p>
-				<p>《夕阳斯库特》——音速行星<audio src="改善不良情绪的传记/bgm/夕阳斯库特-音速行星.m4a" autoplay="true" controls="true"></audio></p>
-			</div>
-
+			<!-- <p>实时在线人数：未知</p> -->
+			<!-- <p>我还没复制别人的这种功能的js(2333)</p> -->
+			<p>背景音乐</p>
+			<!-- 三生万物 -->
+			<p>请根据自己的内心选择合适的音乐，但是如果你最近情绪不好，睡眠不好，而且最近有和别人吵架的话，请不要听Noesis03——《轮回》那首音乐，请听类似于后面两首风格的音乐</p>
+			《轮回》——出自Noesis03游戏<audio class="background_music" src="bgm/noesis03-title.m4a" controls="true" loop></audio><br/>
+			《蓝莲花》——许巍<audio class="background_music" src="改善不良情绪的传记/bgm/蓝莲花_许巍.ogg" controls="true" loop></audio><br/>
+			《夕阳斯库特》——音速行星<audio src="改善不良情绪的传记/bgm/夕阳斯库特-音速行星.m4a" autoplay="true" controls="true"></audio><br/>
+			<!-- 导航栏 -->
 			<nav>
 			    <a href="https://github.com/little-game-and-simple-software/idea-show/tree/gh-pages">Github主页</a>
 			    <a href="http://ftp6403522.host122.sanfengyun.cn/forum.php">交流论坛</a>
@@ -41,37 +59,65 @@
 				<a href="名人堂.html">名人堂</a>
 			</nav>
 			
-			
+			<!-- 重要内容 以觉醒为主！ -->
 			<div class="idea_box">
-				<button onclick="set_idea_content('user/128hh_ideas.html')">128hh的想法</button>
-				<button onclick="set_idea_content('user/a1exwang_ideas.html')"> a1exwang的想法</button>
-				<button onclick="set_idea_content('user/尚嘉宣 ideas.html')">尚嘉宣的想法</button>
-				<button onclick="set_idea_content('关于编程与数学的对话传/index.html')">关于编程与数学的对话传</button>
-				<button onclick="set_idea_content('恋爱对话思考传记/index.html')">恋爱对话思考传记</button>
-				<button onclick="set_idea_content('杂记传/index.html')">杂记传</button>
+				<h2 style="text-align: center;">日常交流区</h2>
 				<button onclick="set_idea_content('KangKang的开发小记录(随性更新)/index.html')">KangKang的开发小记录(随性更新)</button>
-				<button onclick="set_idea_content('改善不良情绪的传记/index.html')">改善不良情绪与拯救世界的传记</button>
-				<button onclick="set_idea_content('user/128hh 关于外向和内向性格对情绪发泄的思考.html')">关于外向和内向性格对情绪发泄的思考</button>
-				<button onclick="set_idea_content('user/128hh 关于爱这个字的思考.html')">关于爱这个字的思考</button>
-				<button onclick="set_idea_content('user/128hh 关于音乐辅助治疗的思考.html')">关于音乐辅助治疗情绪问题的思考</button>
-				<button onclick="set_idea_content('放松区/index.html')">放松区</button>
-				<button onclick="set_idea_content('user/匿名 关于性转换与女装的思考.html')">匿名 关于性转换与女装的思考</button>
-				<button onclick="set_idea_content('user/128hh 关于为什么男生穿女装会有安全感的思考.html')">关于为什么男生穿女装会有安全感的思考</button>
-				<button onclick="set_idea_content('user/关于每个人都活在自己的世界里的思考.html')">关于每个人都活在自己的世界里的思考</button>
+				<button onclick="set_idea_content('user/不重要/a1exwang的创意.html')">a1exwang的创意</button>
+				<button onclick="set_idea_content('user/日常深度思考/128hh 关于音乐辅助治疗的思考.html')">关于音乐辅助治疗情绪问题的思考</button>
+				<button onclick="set_idea_content('user/大家的思考、创意、想法/尚嘉宣/关于defold是不是开源引擎的对话传记.html')">关于defold是不是开源引擎的对话传记</button>
+				<button onclick="set_idea_content('user/大家的思考、创意、想法/a1exwang.html')">关于音乐辅助治疗情绪问题的思考</button>
+				<!-- 使用易经的道理，先引入，在集中所有的能量，最后破！ -->
+				<!-- 日常生活，引子！-->
+				<!-- 先平静情绪，是引子-->
+				<h2 style="text-align: center;">精神成长，觉悟、觉醒区</h2>
 				<button onclick="jump_to('https://zhuanlan.zhihu.com/p/421872541')">转载 正念与慈悲的关系？正念为土，滋养慈悲之花</button>
 				<button onclick="jump_to('https://zhuanlan.zhihu.com/p/52630072')">转载 正念是如何影响大脑的，哪种更有效？多久开始起作用？来看科研报告</button>
-				<button onclick="jump_to('https://www.bkseeker.com/%e7%bb%99%e6%88%91%e6%9c%aa%e6%9d%a5%e7%9a%84%e5%ad%a9%e5%ad%90-16239')">转载 《给我未来的孩子》——张梅</button>
+				<button onclick="set_idea_content('user/重要/关于音乐辅助治疗的思考.html')">关于音乐辅助治疗情绪问题的思考</button>
+
+				<!-- 引子，起冲！ -->
+				<button onclick="set_idea_content('user/重要/关于每个人都活在自己的世界里的思考.html')">关于每个人都活在自己的世界里的思考</button>
+				<button onclick="set_idea_content('user/重要/使用录音笔来记录老师的话.html')">使用录音笔来记录老师的话</button>
+				<button onclick="set_idea_content('恋爱对话思考传记/index.html')">恋爱对话思考传记</button>
+				<button onclick="set_idea_content('关于爱情的思考/index.html')">关于爱情的思考</button> 
+
+				<!-- 能量升 -->
 				<button onclick="set_idea_content('杂记传/拯救篇/关于自我觉醒的思考.html')">关于自我觉醒的思考</button>
-				<button onclick="set_idea_content('关于爱情的思考/index.html')">关于爱情的思考</button>
-	
+				<button onclick="set_idea_content('改善不良情绪的传记/index.html')">改善不良情绪与拯救世界的传记</button>
+
+				<!-- 觉醒之路音乐，升，再破！-->
+				<!-- 下载到本地，保证绝对安全！ -->
+				<button onclick="jump_to('https://music.163.com/#/playlist?id=7753408196')">觉醒之路音乐</button>
+
+				<!-- 破！ -->
+				<button onclick="jump_to('user/重要/关于特斯拉不是外星人的推论.html')">关于特斯拉不是外星人的推论</button>
+				
+				<button onclick="set_idea_content('关于编程与数学的对话传/index.html')">关于编程与数学的对话传</button>
+				
+				<!-- <button onclick="set_idea_content('杂记传/index.html')">杂记传</button>
+				
+				<button onclick="set_idea_content('user/128hh 关于外向和内向性格对情绪发泄的思考.html')">关于外向和内向性格对情绪发泄的思考</button>
+				<button onclick="set_idea_content('user/128hh 关于爱这个字的思考.html')">关于爱这个字的思考</button>
+				
+				<button onclick="set_idea_content('放松区/index.html')">放松区</button>
+				
+				<button onclick="jump_to('https://www.bkseeker.com/%e7%bb%99%e6%88%91%e6%9c%aa%e6%9d%a5%e7%9a%84%e5%ad%a9%e5%ad%90-16239')">转载 《给我未来的孩子》——张梅</button>
+				
+				-->
+
+
+
+				
+				
 				<button onclick="back_idea_content()">>返回上一个想法</button>
+				
 			</div>
 			
 			<div id="idea_content"></div>
 			
 			<div class="tip_box">
 				<p>作者是个技校生 没钱 没人脉 从小喜欢用电脑 自学编程,欢迎有热爱电脑的人加入管理</p>
-				<p>我不是以流量为王,不喜欢恰烂钱,希望这里没有营销号,只希望网民回归本心,明白自己喜欢什么,想要什么,想要做什么,对世界的理性理解</p>
+				<p>我不是以流量为王,不喜欢恰烂钱,希望这里没有营销号,只希望网民回归本心,明白自己喜欢什么,想要什么,想要做什么,对世界的深度思考</p>
 				<p>你可以在爱发电给我捐赠,来便于以后把网站移动到独立服务器上面</p>
 			</div>
 		</div>
@@ -86,5 +132,7 @@
 			<p>日出而作，日落而息——《庄子·让王》</p>
 		</div>
 	</body>
-	<script type="text/javascript" src="load.js"></script>
+	<script src="1010.js"></script>
+	<script src="important.js"></script>
+	<!-- <script type="text/javascript" src="load.js"></script> -->
 </html>
