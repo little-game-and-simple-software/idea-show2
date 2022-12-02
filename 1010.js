@@ -7,7 +7,7 @@ function hello_world()
 function request_fozu()
 {
     var request = new XMLHttpRequest()
-    request.open("get","fozu.txt",true)
+    request.open("get",'fozu.txt',true)
     request.send()
     request.onload = function()
     {
