@@ -1,0 +1,32 @@
+ol
+{
+    border:solid 2px;
+    width: 50%;
+    background-color: skyblue;
+}
+ol li,ol li a
+{
+    color: yellow;
+    font-size: large;
+}
+
+h1
+{
+    text-align: center;
+    color:rebeccapurple;
+}
+
+.back
+{
+    width: 150px;
+    height: 90px;
+    font-size: large;
+    background-color: aliceblues ;
+    border-radius: 20%;
+    display: block;
+}
+
+.back a
+{
+    text-decoration: none;
+}
