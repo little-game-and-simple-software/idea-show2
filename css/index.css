@@ -1,0 +1,20 @@
+/* 1010 11111 */
+.ProtectTheWorld
+{
+    color:red;
+}
+/* 1010 00000 */
+.NormalBeautifulWorld
+{
+    color:black;
+}
+/* 高亮用1010 1111111 */
+.high_light
+{
+    color:red;
+}
+.split_music
+{
+    display: inline-flex;
+    width:auto;
+}
