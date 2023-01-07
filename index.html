@@ -31,25 +31,38 @@
 				我推荐以下两种播放顺序
 			</h2>
 			<!-- 适用于情绪痛苦->自我觉醒并获得情绪调节的能力 -->
-			<div class="split_music">
-				<p class="bgm_tiaojie">第一种</p>
+			<style>
+				#two_recomand_music_seq_list
+				{
+					border: solid 2px red;
+				}
+				ol
+				{
+					display: inline-flex;
+					flex-direction: column;
+					list-style: none;
+					padding-left: 0px;
+					border: solid 2px red;
+				}
+				
+			</style>
+			<div id="two_recomand_music_seq_list">
 				<ol>
 					<li>  <audio src="改善不良情绪的传记/bgm/夕阳斯库特-音速行星.m4a" controls="true"></audio><br/>  </li>
 					<li>  <audio class="background_music" src="改善不良情绪的传记/bgm/蓝莲花_许巍.ogg" controls="true" loop></audio><br/> </li>
 					<li>  <audio src="改善不良情绪的传记/bgm/夕阳斯库特-音速行星.m4a" controls="true"></audio><br/>  </li>
 					<li>  <audio class="background_music" src="改善不良情绪的传记/bgm/蓝莲花_许巍.ogg" controls="true" loop></audio><br/> </li>
 				</ol>
-			</div>
-			<!-- 适用于情绪幸福->但是开始思考人生意义，世界真理的人 -->
-			<div class="split_music">
-				<p class="bgm_tiao_jie">第二种</p>
+				<!-- 适用于情绪幸福->但是开始思考人生意义，世界真理的人 -->
 				<ol>
 					<li>  <audio src="bgm/Old World.mp3" controls="ture" ></audio> <br/>  </li>
 					<li>  <audio src="bgm/威風凛然.mp3" controls="ture" ></audio>  <br/>  </li>
 					<li>  <audio src="bgm/Mix Aaron - another world.mp3" controls="ture" ></audio>  <br/>  </li>
 					<li>  <audio src="bgm/Space.mp3" controls="ture" ></audio>  <br/>  </li>
 				</ol>
+	
 			</div>
+			
 			<!-- 导航栏 -->
 			<nav>
 			    <a href="https://github.com/little-game-and-simple-software/idea-show/tree/gh-pages">Github主页</a>
@@ -71,61 +84,66 @@
 				<a href="https://www.topys.cn/">TOPYS创意内容平台</a>
 			</nav>
 			<!-- 重要内容 以觉醒为主。 -->
-			<div class="idea_box">
-				<h2 style="text-align: center;">日常交流区</h2>
-				<button onclick="set_idea_content('用户思考归档/大家的思考、创意、想法/KangKang的开发小记录(随性更新)/index.html')">KangKang的开发小记录(随性更新)</button>
-				<!-- <button onclick="set_idea_content('user/大家的思考、创意、想法/a1exwang/a1exwang的创意.html')">a1exwang的创意</button>
-				<button onclick="set_idea_content('user/日常深度思考/128hh 关于音乐辅助治疗的思考.html')">关于音乐辅助治疗情绪问题的思考</button>
-				<button onclick="set_idea_content('user/大家的思考、创意、想法/尚嘉宣/关于defold是不是开源引擎的对话传记.html')">关于defold是不是开源引擎的对话传记</button>
-				<button onclick="set_idea_content('user/不重要/128hh 关于理想型学校的思考.html')">128hh 关于理想型学校的思考</button>
-				<button onclick="set_idea_content('user/不重要/128hh 关于外向和内向性格对情绪发泄的思考.html')">128hh 关于外向和内向性格对情绪发泄的思考</button>
-				<button onclick="set_idea_content('user/不重要/128hh 关于为什么男生穿女装会有安全感的思考.html')">128hh 关于为什么男生穿女装会有安全感的思考</button>
-				<button onclick="set_idea_content('user/不重要/128hh 自动修修正带的机器')">128hh 自动修修正带的机器</button>
-				<button onclick="set_idea_content('user/不重要/匿名 关于性转换与女装的思考.html')">匿名 关于性转换与女装的思考</button>
-				<button onclick="set_idea_content('user/次重要/128hh 一种科学的调整情绪的音乐播放器.html')">128hh 一种科学的调整情绪的音乐播放器</button>
-				<button onclick="set_idea_content('user/次重要/128hh 中医正骨与科学结合的思考.html')">128hh 中医正骨与科学结合的思考</button>
-				<button onclick="set_idea_content('user/日常深度思考/128hh 关于正念冥想种类的思考.html')">128hh 关于正念冥想种类的思考</button>
-				<button onclick="set_idea_content('user/日常深度思考/128hh 如何找绘画的感觉.html')">128hh 如何找绘画的感觉</button> -->
+			<style>
+				#mulu
+				{
+					border: solid 2px green;
+					width: 45%;
+				}
+				#content
+				{
+					width: 50%;
+				}
+				
+				#mulu,#content
+				{
+					display: inline-flex;
+					border: solid 2px red;
+					
+				}
+				
+			</style>
+			<div id="mulu">
+				<div class="idea_box">
+					<h2 style="text-align: center;">日常交流区</h2>
+					<button onclick="set_idea_content('用户思考归档/大家的思考、创意、想法/KangKang的开发小记录(随性更新)/index.html')">KangKang的开发小记录(随性更新)</button>
+					<button onclick="back_idea_content()">>返回上一个想法</button>
+					
+					<h2 style="text-align: center;">精神成长，觉悟、觉醒区</h2>
+					<!-- 下面的存入等等处理 -->
+					<button onclick="set_idea_content('user/重要/关于音乐辅助治疗的思考.html')">关于音乐辅助治疗情绪问题的思考</button>
+					
+					<button onclick="set_idea_content('user/重要/关于每个人都活在自己的世界里的思考.html')">关于每个人都活在自己的世界里的思考</button>
+					<button onclick="set_idea_content('user/重要/使用录音笔来记录老师的话.html')">使用录音笔来记录老师的话</button>
+					
+					<button onclick="set_idea_content('关于爱情的思考/index.html')">关于爱情的思考</button> 
+					<button onclick="set_idea_content('日常深度思考/128hh 关于从现象到本质的思考.html')">关于编程与数学的对话传</button>
+					
+					<button onclick="set_idea_content('杂记传/拯救篇/关于自我觉醒的思考.html')">关于自我觉醒的思考</button>
 
-				<button onclick="back_idea_content()">>返回上一个想法</button>
+					<button onclick="jump_to('https://music.163.com/#/playlist?id=7753408196')">觉醒之路音乐</button>
+					<button onclick="set_idea_content('小沙盒的杂记传/关于编程与数学的对话传/index.html')">关于编程与数学的对话传</button>
+					<button onclick="set_idea_content('小沙盒的杂记传/index.html')">个人感悟</button>
+					<button onclick="set_idea_content('user/128hh 关于外向和内向性格对情绪发泄的思考.html')">关于外向和内向性格对情绪发泄的思考</button>
+					<button onclick="set_idea_content('user/128hh 关于爱这个字的思考.html')">关于爱这个字的思考</button>
+					<button onclick="jump_to('https://www.bkseeker.com/%e7%bb%99%e6%88%91%e6%9c%aa%e6%9d%a5%e7%9a%84%e5%ad%a9%e5%ad%90-16239')">转载 《给我未来的孩子》——张梅</button>
 
-				<!-- 日常生活是引子。-->
-				<h2 style="text-align: center;">精神成长，觉悟、觉醒区</h2>
-				<!-- <button onclick="jump_to('https://zhuanlan.zhihu.com/p/421872541')">转载 正念与慈悲的关系？正念为土，滋养慈悲之花</button>
-				<button onclick="jump_to('https://zhuanlan.zhihu.com/p/52630072')">转载 正念是如何影响大脑的，哪种更有效？多久开始起作用？来看科研报告</button> -->
-				
-				<!-- 下面的存入等等处理 -->
-				<button onclick="set_idea_content('user/重要/关于音乐辅助治疗的思考.html')">关于音乐辅助治疗情绪问题的思考</button>
-				
-				<button onclick="set_idea_content('user/重要/关于每个人都活在自己的世界里的思考.html')">关于每个人都活在自己的世界里的思考</button>
-				<button onclick="set_idea_content('user/重要/使用录音笔来记录老师的话.html')">使用录音笔来记录老师的话</button>
-				
-				<button onclick="set_idea_content('关于爱情的思考/index.html')">关于爱情的思考</button> 
-				<button onclick="set_idea_content('日常深度思考/128hh 关于从现象到本质的思考.html')">关于编程与数学的对话传</button>
-				
-				<button onclick="set_idea_content('杂记传/拯救篇/关于自我觉醒的思考.html')">关于自我觉醒的思考</button>
+					<h2 style="text-align: center;">放松区</h2>
+					<button onclick="set_idea_content('放松区/index.html')">搞笑子分区</button>
+					
+					<button onclick="back_idea_content()">>返回上一个想法</button>
 
-				<!-- 下载到本地，保证安全。 -->
-				<button onclick="jump_to('https://music.163.com/#/playlist?id=7753408196')">觉醒之路音乐</button>
-				<button onclick="set_idea_content('小沙盒的杂记传/关于编程与数学的对话传/index.html')">关于编程与数学的对话传</button>
-				<button onclick="set_idea_content('小沙盒的杂记传/index.html')">个人感悟</button>
-				<button onclick="set_idea_content('user/128hh 关于外向和内向性格对情绪发泄的思考.html')">关于外向和内向性格对情绪发泄的思考</button>
-				<button onclick="set_idea_content('user/128hh 关于爱这个字的思考.html')">关于爱这个字的思考</button>
-				<button onclick="jump_to('https://www.bkseeker.com/%e7%bb%99%e6%88%91%e6%9c%aa%e6%9d%a5%e7%9a%84%e5%ad%a9%e5%ad%90-16239')">转载 《给我未来的孩子》——张梅</button>
-
-				<h2 style="text-align: center;">放松区</h2>
-				<button onclick="set_idea_content('放松区/index.html')">搞笑子分区</button>
-				
-				<button onclick="back_idea_content()">>返回上一个想法</button>
-
-				<h2 style="text-align: center;">历史归档区</h2>
-				<button onclick="set_idea_content('历史归档/道之突击小报/2022/12/12.html')">道之突击小报-2022/12/12</button>
-				
-				<button onclick="back_idea_content()">>返回上一个想法</button>
-				
+					<h2 style="text-align: center;">历史归档区</h2>
+					<button onclick="set_idea_content('历史归档/道之突击小报/2022/12/12.html')">道之突击小报-2022/12/12</button>
+					
+					<button onclick="back_idea_content()">>返回上一个想法</button>
+					
+				</div>
+			</div>
+			<div id="content">
+				<div id="idea_content"></div>
 			</div>
 			
-			<div id="idea_content"></div>
 			
 			<div class="tip_box">
 				<p>作者是个技校生 没钱 没人脉 从小喜欢用电脑 自学编程,欢迎有热爱电脑的人加入管理</p>
