@@ -1,25 +1,25 @@
-$(function(){
+$(function()
+{
     console.log("hello world")
-    function open()
+    function open_book()
     {
-
+        $("#center").show()
+        $("#left").show()
     }
-    function close()
+    function close_book()
     {
-
+        $("#center").hide()
+        $("#left").hide()
     }
     $("#open").click(function()
     {
-        // console.log("hello world")
-        $("#center").show()
-        $("#left").show()
+        open_book()
     })
 
     $("#close").click(function()
     {
         // console.log("hello world")
-        $("#center").hide()
-        $("#left").hide()
+        close_book()
     })
 
     $("#exec_open").click(function()
@@ -33,4 +33,4 @@ $(function(){
         $("#right").hide()
         $("#right").hide()
     })
- })
+})

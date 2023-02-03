@@ -4,12 +4,10 @@
     display: inline-flex;
 } 
 /* 翻书开关 */
-#open,#close,#exec_open,#exec_close
+#open, #close, #exec_open, #exec_close
 {
     width:200px;
 }
-
-
 /* 中央布局 */
 #center
 {
@@ -52,11 +50,20 @@ li
 #practice li .question_title
 {
     font-size: 25px;
-    /* margin-top: 25px; */
+    /* 选择题大行距 */
+    margin-top: 25px;
 }
 #practice li .selection
 {
-    margin-top: 5px;
+    /* 答案和题目的距离 */
+    margin-top: 15px;
+}
+/* 选择按钮样式 */
+#practice li .selection input
+{
+    font-size: 25px;
+    width: 25px;
+    transform: scale(1.5);
 }
 
 /* 提交 */
