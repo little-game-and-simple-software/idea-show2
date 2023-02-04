@@ -1,0 +1,31 @@
+<button onclick="up()">上一页</button>
+<button onclick="down()">下一页</button>
+<br/>
+<img id="book" src="img/1.png" alt="练习二" width="600px"/>
+<br/>
+
+<script>
+    var total_index = 32
+    var current_index = 1
+
+    var book = document.getElementById("book")
+
+    function up()
+    {
+        if(current_index >= 2)
+        {
+            current_index -= 1
+            book.src = "img/" + current_index + ".png"
+        }
+        
+    }
+
+    function down()
+    {
+        if(current_index <= 31)
+        {
+            current_index += 1
+            book.src = "img/" + current_index + ".png"
+        }
+    }
+</script>
