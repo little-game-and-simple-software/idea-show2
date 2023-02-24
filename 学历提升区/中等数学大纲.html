@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/中等数学大纲.css">
         <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="js/自动批卷.js"></script>
+        <script src="js/填空题.js"></script>
     </head>
     <body>
         <nav>
@@ -202,6 +203,8 @@
                 <h1>练习题</h1>
                 <h2>练习一 集合和简易逻辑</h2>
                 <h3>一、选择题：</h3>
+                <label>选择题答案开关</label>
+                <input type="checkbox" onchange="on_xzt_toogle(this)">
                 <!-- 搞个爬虫，自动收集，自动+1（服务器要钱） -->
                     <!-- 使用vue 模板功能 -->
                     <!-- 模板 -->
@@ -260,7 +263,7 @@
                     </li>
 
                     <li>
-                        <div class="question_title">设集合M=&#123 x | x>=4 &#125, N=&#123 x | x<6 &#125, 则M 并N 等于......</div>
+                        <div class="question_title">设集合M=&#123 x | x>=4 &#125;, N=&#123; x | x<6 &#125, 则M 并N 等于......</div>
                         <div class="selection">
                             <label id="q5" for="sel5">
                                 <input type="radio" name="sel5" value="(A) 实数集"/>             (A)：实数集
@@ -332,6 +335,9 @@
                             <button>＝</button>
                             <button>右包含左</button>
                             <button>左包含右边</button>
+                            <button>&lt;-回退</button>
+                            <label>填空题答案开关</label>
+                            <input type="checkbox" id="tkt_toogle" onchange="on_tkt_toogle(this)">
 
                             <li>∅ <input type="text" name="" id=""> {0}</li>
                             <li>∅ <input type="text"> {0,1,5}</li>
