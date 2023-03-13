@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+		<title>idea-show</title>
+		<link rel="stylesheet" type="text/css" href="css/blocks.css"/>
+		<link rel='stylesheet' type="text/css" href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css'/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style>
+			.toogleDivButton:hover
+			{
+				cursor: pointer;
+			}
+			#two_recomand_music_seq_list
+			{
+				display: none;
+			}
+		</style>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+			$(function()
+			{
+				$(".toogleDivButton").click(function()
+				{
+					$("#two_recomand_music_seq_list").slideToggle("slow");
+				})
+				
+			})
+		</script>
+	</head>
+
+	<body>
+		<nav>
+			<button>首页</button>
+
+			<a href="login.html">注册/登录</a>
+			<a href="creative_center.html">创作中心</a>
+			<a href="upload.html">投稿</a>
+			<a href="about.html">关于本站</a>
+			<form>
+				<input type="text" width="600px" placeholder="请输入搜索内容" />
+				<button>搜索</button>
+			</form>
+		</nav>
+		<!--<div id="user_ideas"></div>-->
+		<div class="container">
+			<h1 class="title">
+				idea-show 青年创意与思想交流社区（青年大创造、青年大思想）
+			</h1>
+			<hr/>
+			<h2 style="color: #f8f18e;border: solid red 2px;">后续会陆续开放交流功能（gitTalk）但是开发速度缓慢，自由，只有我和另外一个忙碌的高中生开发，如果你们想支持我们的话，欢迎提供赞助！</h2>
+			<!-- <p>实时在线人数：未知</p> -->
+			<!-- <p>我还没复制别人的这种功能的js(2333)</p> -->
+			<!-- 三生万物 -->
+			<p>请根据自己的内心选择合适的音乐，但是如果你最近<b>情绪不好</b>，睡眠不好，而且最近有和别人<b>吵架</b>的话，请<b>不要听</b>Noesis03——《轮回》那首音乐，请听后面两首风格的音乐</p>
+			<audio class="background_music" src="/bgm/noesis03-title.m4a" controls="true" loop></audio>《轮回》——出自Noesis03游戏 <br/>
+			<audio class="background_music" src="/bgm/蓝莲花_许巍.ogg" controls="true" loop></audio>《蓝莲花》——许巍 <br/>
+			<audio src="/bgm/夕阳斯库特-音速行星.m4a" autoplay="true" controls="true"></audio>《夕阳斯库特》——音速行星 <br/>
+			<!-- todo 展开与关闭 -->
+			<h2 class="toogleDivButton">
+				我推荐以下两种播放顺序>
+			</h2>
+			<!-- 适用于情绪痛苦->自我觉醒并获得情绪调节的能力 -->
+			<style>
+				#two_recomand_music_seq_list
+				{
+					border: solid 2px red;
+				}
+				ol
+				{
+					display: inline-flex;
+					flex-direction: column;
+					list-style: none;
+					padding-left: 0px;
+					border: solid 2px red;
+				}
+				
+			</style>
+			<div id="two_recomand_music_seq_list">
+				<ol>
+					<li>  <audio src="/bgm/夕阳斯库特-音速行星.m4a" controls="true"></audio><br/>  </li>
+					<li>  <audio class="background_music" src="/bgm/蓝莲花_许巍.ogg" controls="true" loop></audio><br/> </li>
+					<li>  <audio src="/bgm/夕阳斯库特-音速行星.m4a" controls="true"></audio><br/>  </li>
+					<li>  <audio class="background_music" src="/bgm/蓝莲花_许巍.ogg" controls="true" loop></audio><br/> </li>
+				</ol>
+				<!-- 适用于情绪幸福->但是开始思考人生意义，世界真理的人 -->
+				<ol>
+					<li>  <audio src="bgm/Old World.mp3" controls="ture" ></audio> <br/>  </li>
+					<li>  <audio src="bgm/威風凛然.mp3" controls="ture" ></audio>  <br/>  </li>
+					<li>  <audio src="bgm/Mix Aaron - another world.mp3" controls="ture" ></audio>  <br/>  </li>
+					<li>  <audio src="bgm/Space.mp3" controls="ture" ></audio>  <br/>  </li>
+				</ol>
+	
+			</div>
+			
+			<!-- 导航栏 -->
+			<nav>
+				<a href="https://afdian.net/@1288hh">爱发电捐赠</a>
+				<a href="#">创意区</a>
+				<a href="#">思考区</a>
+				<a href="#">沙雕区</a>
+				<a href="#">放松区</a>
+				<a href="名人堂.html">名人堂</a>
+				<a href="生活小贴士/index.html" target="_blank">生活小贴士</a>
+			</nav>
+			<nav>
+				<!-- "创意钥匙" -->
+				<a href="https://www.topys.cn/">TOPYS创意内容平台</a>
+				<!-- 学历提升区 -->
+				<a href="学历提升区/成人高考.html">成人高考区</a>
+			</nav>
+			<!-- 重要内容 以觉醒为主。 -->
+			<style>
+				#mulu
+				{
+					border: solid 2px green;
+					width: 45%;
+				}
+				#mulu h2
+				{
+					text-align: center;
+				}
+				#content
+				{
+					width: 50%;
+				}
+				
+				#mulu,#content
+				{
+					display: inline-flex;
+					border: solid 2px red;
+					
+				}
+				
+			</style>
+			<div id="mulu">
+				<div class="idea_box">
+					<h2>日常交流区</h2>
+					<button onclick="set_idea_content('用户思考归档/大家合集/KangKang/1、初步的CSS美化与内容呈现 (2022.10.23)/index.html')">KangKang的开发小记录(随性更新)</button>
+					<!--<button onclick="back_idea_content()">>返回上一个想法</button>-->
+					
+					<h2>精神成长区</h2>
+					<!-- 下面的存入等等处理 -->
+					<button onclick="set_idea_content('user/重要/关于音乐辅助治疗的思考.html')">关于音乐辅助治疗情绪问题的思考</button>
+					
+					<button onclick="set_idea_content('用户思考存档/我的思考/重要/关于每个人都活在自己的世界里的思考.html')">关于每个人都活在自己的世界里的思考</button>
+					<button onclick="set_idea_content('用户思考存档/我的思考/重要/使用录音笔来记录老师的话.html')">使用录音笔来记录老师的话</button>
+					
+					<button onclick="set_idea_content('关于爱情的思考/index.html')">关于爱情的思考</button> 
+					<button onclick="set_idea_content('日常深度思考/128hh 关于从现象到本质的思考.html')">关于编程与数学的对话传</button>
+					
+					<button onclick="set_idea_content('杂记传/拯救篇/关于自我觉醒的思考.html')">关于自我觉醒的思考</button>
+
+					<button onclick="jump_to('https://music.163.com/#/playlist?id=7753408196')">觉醒之路音乐歌单推荐</button>
+					<button onclick="set_idea_content('小沙盒的杂记传/关于编程与数学的对话传/index.html')">关于编程与数学的对话传</button>
+					<button onclick="set_idea_content('小沙盒的杂记传/index.html')">个人感悟</button>
+					<button onclick="set_idea_content('用户思考存档/128hh 关于外向和内向性格对情绪发泄的思考.html')">关于外向和内向性格对情绪发泄的思考</button>
+					<button onclick="set_idea_content('user/128hh 关于爱这个字的思考.html')">关于爱这个字的思考</button>
+					<button onclick="jump_to('https://www.bkseeker.com/%e7%bb%99%e6%88%91%e6%9c%aa%e6%9d%a5%e7%9a%84%e5%ad%a9%e5%ad%90-16239')">转载 《给我未来的孩子》——张梅</button>
+
+					<h2>放松区</h2>
+					<button onclick="set_idea_content('放松区/index.html')">搞笑子分区</button>
+					
+					<!--<button onclick="back_idea_content()">>返回上一个想法</button>-->
+					
+					<!-- 中医区 -->
+					<h2>中医区</h2>
+					<button onclick="set_idea_content('中医区/index.html')">中医区</button>
+					
+
+					<h2>历史归档区</h2>
+					<!--<button onclick="set_idea_content('历史归档/道之突击小报/2022/12/12.html')">道之突击小报-2022/12/12</button>-->
+					
+					<button onclick="back_idea_content()">>返回上一个想法</button>
+					
+					<h2>道家区</h2>
+					<button onclick="set_idea_content('道家区/index.html')">道家区</button>
+
+					<h2>学习区</h2>
+					<button onclick="set_idea_content('学习区/12星座/layout_index.html')">12星座</button>
+					<button onclick="set_idea_content('学习区/地理学/layout_index.html')">地理学</button>
+					<button onclick="set_idea_content('学习区/电路学/layout_index.html')">电路学</button>
+				</div>
+			</div>
+			<div id="content">
+				<div id="idea_content"></div>
+			</div>
+			
+			
+			<div class="tip_box">
+				<p>作者是个技校生 没钱 没人脉 从小喜欢用电脑 自学编程,欢迎有热爱电脑的人加入管理</p>
+				<p>我不是以流量为王,不喜欢恰烂钱,希望这里没有营销号,只希望网民回归本心,明白自己喜欢什么,想要什么,想要做什么,对世界的深度思考</p>
+				<p>你可以在爱发电给我捐赠,来便于以后把网站移动到独立服务器上面</p>
+			</div>
+		</div>
+		<div class="saying_box">
+			<h2>名言警句</h2>
+			<p>尽信书不如无书——《孟子·尚书》</p>
+			<p>奥卡姆剃刀原理——14世纪英格兰的逻辑学家、圣方济各会修士奥卡姆的威廉（William of Occam） 意思是：能简就不要繁</p>
+		</div>
+		<div class="saying_box">
+			<h2>先人的智慧语句</h2>
+			<p>大道至简——《道德经》</p>
+			<p>日出而作，日落而息——《庄子·让王》</p>
+		</div>
+		<a href="friend.html">友情链接</a>
+		<a href="https://github.com/little-game-and-simple-software/idea-show/tree/gh-pages">Github</a>
+		<a href="http://ftp6403522.host122.sanfengyun.cn/forum.php">交流论坛</a>
+	</body>
+	<script src="1010.js"></script>
+	<script src="important.js"></script>
+	<!-- <script type="text/javascript" src="load.js"></script> -->
+</html>
