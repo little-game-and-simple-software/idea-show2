@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公告-ideashow</title>
+    <style>
+        #main-container
+        {
+            display: inline-flex;
+            flex-direction: column;
+            border: solid rgb(247, 2, 2) 3px;
+            width: 800px;
+            height: 800px;
+
+        }
+        #latest-container
+        {
+            display: inline-flex;
+            border: dashed cadetblue 3px;
+            width: 800px;
+            height: 800px;
+        }
+        #main-container > #page
+        {
+            display: inline;
+
+        }
+        button {
+            border: 2px solid #24b4fb;
+            background-color: #24b4fb;
+            border-radius: 0.9em;
+            padding: 0.8em 1.2em 0.8em 1em;
+            transition: all ease-in-out 0.2s;
+            font-size: 16px;
+            }
+
+            button span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-weight: 600;
+            }
+
+            button:hover {
+            background-color: #0071e2;
+            }
+            .tiezi-card > .card-content
+            {
+                border: dashed cadetblue 3px;
+                width: 100%;
+                height: 100px;
+            }
+    </style>
+</head>
+<body>
+    <!-- <img src="img/sitela.png" alt="斯特拉"> -->
+    <div id="main-container">
+        <!-- <img src="img/sitela.png" alt="斯特拉" srcset="" height="400px"> -->
+        <button>
+            <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg>发表
+            </span>
+        </button>
+        
+        <div class="tiezi-card">头像名称<span></span>
+            <div class="card-title">标题</div>
+            <div class="card-content">内容简述</div>
+        </div>
+    </div>
+    <nav id="page">
+        <button>上一页</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>下一页</button>
+    </nav>
+    <!--<div id="latest-container">
+
+    </div>
+-->
+
+</body>
+</html>
