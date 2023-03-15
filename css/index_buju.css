@@ -1,0 +1,57 @@
+.bg_root
+	{
+		display: inline-flex;
+		flex-direction: column;
+	}
+	.bg_root > #red
+	{
+		background-color: red;
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+	}
+	.bg_root > #yellow
+	{
+		background-color: yellow;
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+	}
+	.bg_root > a
+	{
+		margin-left: 2.5px;
+	}
+
+	#fq_root
+	{
+		border:dashed cadetblue 3px;
+		width: 200px;
+	}
+	#fq_root > #top > a
+	{
+		/* border:dashed cadetblue 3px; */
+		display: inline-flex;
+		cursor: pointer;
+	}
+	#fq_root > #top > a:hover
+	{
+		color: cadetblue;
+		cursor: pointer;
+	}
+	#fq_root > #bottom > a:hover
+	{
+		color: cadetblue;
+		cursor: pointer;
+	}
+	/* 中导航 */
+	#second_root > #left
+	{
+		display: inline-flex;
+	}
+	#second_root > #right
+	{
+		display: inline-flex;
+	}
+s
