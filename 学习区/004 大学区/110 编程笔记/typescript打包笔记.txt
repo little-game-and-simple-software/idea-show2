@@ -1,0 +1,5 @@
+1. 准备工作 npm init 以及typescript环境
+2. 创建src文件夹，用于编写代码
+
+注意：
+不应该将 TSC 作为编译项目的工具，应该将 TSC 作为类型检查工具，代码编译的工作尽量交给 Rollup、Webpack 或 Babel 等打包工具!
