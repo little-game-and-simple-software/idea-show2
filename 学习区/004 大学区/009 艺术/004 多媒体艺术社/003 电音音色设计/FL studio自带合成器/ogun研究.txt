@@ -1,6 +1,0 @@
-课程：https://www.bilibili.com/video/BV1bx41137sN?p=2&vd_source=2f740c00cfe14d9860c2829322f9898f
-
-ogun=直接式的谐波编辑器
-重点：种子特性（细节）
-就是谐波的权重
-加权，
