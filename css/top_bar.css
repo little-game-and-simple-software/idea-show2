@@ -1,0 +1,39 @@
+.top-bar
+{
+    border: solid 2px red;
+    position: fixed;
+    width: 100%;
+    background-color: aliceblue;
+}
+.top-bar > .head-link-btn
+{
+    background-color: #231557;
+    border: solid 2px #231557;
+    width: fit-content;
+    display: inline;
+}
+.top-bar > .head-link-btn > a
+{
+    text-decoration: none;
+    color: white;
+}
+.top-bar > .search-bar
+{
+    background-color: ;
+}
+.top-bar > .search
+{
+    background-color: red;
+}
+.top-bar > .upload
+{
+    background-color: yellow;
+}
+.top-bar > .login
+{
+    background-color: green;
+}
+.top-bar > .register
+{
+    background-color: blue;
+}
