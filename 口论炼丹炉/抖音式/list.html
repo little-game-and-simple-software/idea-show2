@@ -1,0 +1,66 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        .side-bar
+        {
+            width: fit-content;
+            border: solid 2px red;
+            background-color:bisque;
+        }
+        .side-bar:hover
+        {
+            cursor: pointer;
+        }
+        .idea-content
+        {
+            display: inline-block;
+            width: 200px;
+            border: solid 2px red;
+        }
+        .side-bar
+        {
+            display: inline-block;
+        }
+        .Root
+        {
+            border: solid 2px;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <script>
+        var index = 0
+        function like(p_self)
+        {
+            var like = document.getElementById("like")
+            console.log(like)
+            if(index % 2 == 0)
+            {
+                like.className = "animate__heartBeat"
+            }
+            else
+            {
+                like.className = "stop"
+            }
+            
+            index += 1
+        }
+    </script>
+</head>
+<!-- 侧边栏组件 -->
+<!--  class="animate__heartBeat" -->
+<body>
+    <div class="Root">
+        <div class="idea-content">
+            <div>内容</div>
+            <img id="head" src="" alt="头像">
+        </div>
+        <div class="side-bar">
+            <p id="like" class="stop__heartBeat" onclick="like(this)">喜欢</p>
+            <p id="pinglun">评论</p>
+            <p id="collect">收藏</p>
+            <p id="share">转发</p>
+        </div>
+    </div>
+</body>
