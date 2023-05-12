@@ -28,6 +28,11 @@
 				
 			})
 		</script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+		<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> 
+		<!-- or -->
+		<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+		<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script> 
 	</head>
 
 	<body>
@@ -204,6 +209,21 @@
 		<a href="friend.html">友情链接</a>
 		<a href="https://github.com/little-game-and-simple-software/idea-show/tree/gh-pages">Github</a>
 		<a href="http://ftp6403522.host122.sanfengyun.cn/forum.php">交流论坛</a>
+		<h2>创意留言区</h2>	
+		<div id="gitalk-container"></div>
+		<script>
+		const gitalk = new Gitalk({
+			clientID: '5c1d77b83d82c75dd565',
+			clientSecret: '14562b662810812f44bfad63ce2d520c52d46df1',
+			repo: 'mind-discuss',
+			owner: '2439905184',
+			admin: ['2439905184'],
+			id: location.pathname,      // Ensure uniqueness and length less than 50
+			distractionFreeMode: false  // Facebook-like distraction free mode
+		  })
+		   
+		  gitalk.render('gitalk-container')
+		  </script>
 	</body>
 	<script src="1010.js"></script>
 	<script src="important.js"></script>
