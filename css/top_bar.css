@@ -1,7 +1,7 @@
 .top-bar
 {
     border: solid 2px red;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     background-color: aliceblue;
 }

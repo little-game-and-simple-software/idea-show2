@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>录</title>
+    <style>
+        #mulu
+        {
+            border: solid 2px green;
+            width: 45%;
+        }
+        #mulu h2
+        {
+            text-align: center;
+        }
+        #content
+        {
+            width: 50%;
+        }
+        
+        #mulu,#content
+        {
+            display: inline-flex;
+            border: solid 2px red;
+            
+        }
+    </style>
+</head>
+<body>
+    
+<!-- 导航栏 -->
+<nav>
+    <a href="https://afdian.net/@1288hh">爱发电捐赠</a>
+    <a href="#">创意区</a>
+    <a href="#">思考区</a>
+    <a href="#">沙雕区</a>
+    <a href="#">放松区</a>
+    <a href="名人堂.html">名人堂</a>
+    <a href="生活小贴士/index.html" target="_blank">生活小贴士</a>
+</nav>
+<div id="mulu">
+				<div class="idea_box">
+					<h2>日常交流区</h2>
+					<button onclick="set_idea_content('用户思考归档/大家合集/KangKang/1、初步的CSS美化与内容呈现 (2022.10.23)/index.html')">KangKang的开发小记录(随性更新)</button>
+					<!--<button onclick="back_idea_content()">>返回上一个想法</button>-->
+					
+					<h2>精神成长区</h2>
+					<!-- 下面的存入等等处理 -->
+					<button onclick="set_idea_content('user/重要/关于音乐辅助治疗的思考.html')">关于音乐辅助治疗情绪问题的思考</button>
+					
+					<button onclick="set_idea_content('用户思考存档/我的思考/重要/关于每个人都活在自己的世界里的思考.html')">关于每个人都活在自己的世界里的思考</button>
+					<button onclick="set_idea_content('用户思考存档/我的思考/重要/使用录音笔来记录老师的话.html')">使用录音笔来记录老师的话</button>
+					
+					<button onclick="set_idea_content('关于爱情的思考/index.html')">关于爱情的思考</button> 
+					<button onclick="set_idea_content('日常深度思考/128hh 关于从现象到本质的思考.html')">关于编程与数学的对话传</button>
+					
+					<button onclick="set_idea_content('杂记传/拯救篇/关于自我觉醒的思考.html')">关于自我觉醒的思考</button>
+
+					<button onclick="jump_to('https://music.163.com/#/playlist?id=7753408196')">觉醒之路音乐歌单推荐</button>
+					<button onclick="set_idea_content('小沙盒的杂记传/关于编程与数学的对话传/index.html')">关于编程与数学的对话传</button>
+					<button onclick="set_idea_content('小沙盒的杂记传/index.html')">个人感悟</button>
+					<button onclick="set_idea_content('用户思考存档/128hh 关于外向和内向性格对情绪发泄的思考.html')">关于外向和内向性格对情绪发泄的思考</button>
+					<button onclick="set_idea_content('user/128hh 关于爱这个字的思考.html')">关于爱这个字的思考</button>
+					<button onclick="jump_to('https://www.bkseeker.com/%e7%bb%99%e6%88%91%e6%9c%aa%e6%9d%a5%e7%9a%84%e5%ad%a9%e5%ad%90-16239')">转载 《给我未来的孩子》——张梅</button>
+
+					<h2>放松区</h2>
+					<button onclick="set_idea_content('放松区/index.html')">搞笑子分区</button>
+					
+					<!--<button onclick="back_idea_content()">>返回上一个想法</button>-->
+					
+					<!-- 中医区 -->
+					<h2>中医区</h2>
+					<button onclick="set_idea_content('中医区/index.html')">中医区</button>
+					
+
+					<h2>历史归档区</h2>
+					<!--<button onclick="set_idea_content('历史归档/道之突击小报/2022/12/12.html')">道之突击小报-2022/12/12</button>-->
+					
+					<button onclick="back_idea_content()">>返回上一个想法</button>
+					
+					<h2>道家区</h2>
+					<button onclick="set_idea_content('道家区/index.html')">道家区</button>
+
+					<h2>学习区</h2>
+					<button onclick="set_idea_content('学习区/12星座/layout_index.html')">12星座</button>
+					<button onclick="set_idea_content('学习区/地理学/layout_index.html')">地理学</button>
+					<button onclick="set_idea_content('学习区/电路学/layout_index.html')">电路学</button>
+				</div>
+			</div>
+			<div id="content">
+				<div id="idea_content"></div>
+			</div>
+			
+</body>
+</html>
