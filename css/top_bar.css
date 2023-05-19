@@ -1,6 +1,6 @@
 .top-bar
 {
-    border: solid 2px red;
+    /* border: solid 2px red; */
     /* position: fixed; */
     width: 100%;
     background-color: aliceblue;
@@ -17,11 +17,11 @@
     text-decoration: none;
     color: white;
 }
-.top-bar > .search-bar
+.top-bar > #search-bar
 {
     /* background-color: ; */
 }
-.top-bar > .search
+.top-bar > #search
 {
     background-color: rgb(255, 17, 17);
 }

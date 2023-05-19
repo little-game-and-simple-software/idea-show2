@@ -7,16 +7,6 @@
 		<link rel='stylesheet' type="text/css" href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css'/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<link rel="stylesheet" type="text/css" href="css/top_bar.css">
-		<style>
-			.toogleDivButton:hover
-			{
-				cursor: pointer;
-			}
-			#two_recomand_music_seq_list
-			{
-				display: none;
-			}
-		</style>
 		<!-- <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
 		
 		<!-- gitTalk -->
@@ -30,111 +20,65 @@
 		<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
 		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 		<!-- user code -->
-		<script>
-			$(function()
+		<!-- user css -->
+		<style>
+			body
 			{
-				$(".toogleDivButton").click(function()
-				{
-					$("#two_recomand_music_seq_list").slideToggle("slow");
-				})
-				
-			})
-		</script>
+				margin:0px;
+			}
+			#content
+			{
+				margin-left: 8px;
+				margin-right: 8px;
+			}
+		</style>
 	</head>
 
 	<body>
-		<!-- 顶部导航栏组件 -->
-        <nav class="top-bar">
-            <h1 class="head-link-btn"><a href="index.html">idea-show</a></h1>
-            <input class="search-bar" type="text" placeholder="请输入搜索内容">
-            <button class="search">搜索</button>
-            <button class="upload">投稿</button>
-            <button class="login">登录</button>
-            <button class="register">注册</button>
-        </nav>
-		<!--<div id="user_ideas"></div>-->
-		<div class="container">
-			<!-- <h1 class="title">
-				idea-show 青年创意与思想交流社区（青年大创造、青年大思想）
-			</h1> -->
-			<hr/>
-			<!-- <h2 style="color: #f8f18e;border: solid red 2px;">后续会陆续开放交流功能（gitTalk）但是开发速度缓慢，自由，只有我和另外一个忙碌的高中生开发，如果你们想支持我们的话，欢迎提供赞助！</h2> -->
-			<!-- <p>实时在线人数：未知</p> -->
-			<!-- <p>我还没复制别人的这种功能的js(2333)</p> -->
-			<!-- 三生万物 -->
-			<!-- <p>请根据自己的内心选择合适的音乐，但是如果你最近<b>情绪不好</b>，睡眠不好，而且最近有和别人<b>吵架</b>的话，请<b>不要听</b>Noesis03——《轮回》那首音乐，请听后面两首风格的音乐</p>
-			<audio class="background_music" src="/bgm/noesis03-title.m4a" controls="true" loop></audio>《轮回》——出自Noesis03游戏 <br/>
-			<audio class="background_music" src="/bgm/蓝莲花_许巍.ogg" controls="true" loop></audio>《蓝莲花》——许巍 <br/>
-			<audio src="/bgm/夕阳斯库特-音速行星.m4a" autoplay="true" controls="true"></audio>《夕阳斯库特》——音速行星 <br/> -->
-			<!-- todo 展开与关闭 -->
-			<!-- <h2 class="toogleDivButton">
-				我推荐以下两种播放顺序>
-			</h2> -->
-			<!-- 适用于情绪痛苦->自我觉醒并获得情绪调节的能力 -->
-			<!-- <style>
-				#two_recomand_music_seq_list
-				{
-					border: solid 2px red;
-				}
-				ol
-				{
-					display: inline-flex;
-					flex-direction: column;
-					list-style: none;
-					padding-left: 0px;
-					border: solid 2px red;
-				}
-				
-			</style> -->
-			<!-- <div id="two_recomand_music_seq_list">
-				<ol>
-					<li>  <audio src="/bgm/夕阳斯库特-音速行星.m4a" controls="true"></audio><br/>  </li>
-					<li>  <audio class="background_music" src="/bgm/蓝莲花_许巍.ogg" controls="true" loop></audio><br/> </li>
-					<li>  <audio src="/bgm/夕阳斯库特-音速行星.m4a" controls="true"></audio><br/>  </li>
-					<li>  <audio class="background_music" src="/bgm/蓝莲花_许巍.ogg" controls="true" loop></audio><br/> </li>
-				</ol>
-				<!-- 适用于情绪幸福->但是开始思考人生意义，世界真理的人 -->
-				<!-- <ol>
-					<li>  <audio src="bgm/Old World.mp3" controls="ture" ></audio> <br/>  </li>
-					<li>  <audio src="bgm/威風凛然.mp3" controls="ture" ></audio>  <br/>  </li>
-					<li>  <audio src="bgm/Mix Aaron - another world.mp3" controls="ture" ></audio>  <br/>  </li>
-					<li>  <audio src="bgm/Space.mp3" controls="ture" ></audio>  <br/>  </li>
-				</ol> -->
+		<div class="app">
+			<!-- 顶部导航栏组件 -->
+			<nav class="top-bar">
+				<h1 class="head-link-btn"><a href="index.html">idea-show</a></h1>
+				<!-- search-bar -->
+				<input class="" type="text" placeholder="请输入搜索内容">
+				<button id="search">搜索</button>
+				<button class="upload">投稿</button>
+				<button class="login">登录</button>
+				<button class="register">注册</button>
+			</nav>
+			<div id="content">
+				<h2>相关链接</h2>
+				<nav class="navbar navbar-expand-sm bg-light">
+					<ul class="navbar-nav">
+					  <li class="nav-item">
+						<a href="https://www.topys.cn/">TOPYS创意内容平台</a>
+					  </li>
+					  <li class="nav-item">
+						<a href="/录/index.html">资料库</a>
+					  </li>
+					</ul>
+				  </nav>
+				  <div class="saying_box">
+					<h2>名言警句</h2>
+					<p>尽信书不如无书——《孟子·尚书》</p>
+					<p>奥卡姆剃刀原理——14世纪英格兰的逻辑学家、圣方济各会修士奥卡姆的威廉（William of Occam） 意思是：能简就不要繁</p>
+				</div>
+				<div class="saying_box">
+					<h2>先人的智慧语句</h2>
+					<p>大道至简——《道德经》</p>
+					<p>日出而作，日落而息——《庄子·让王》</p>
+				</div>
+				<a href="friend.html">友情链接</a>
+				<a href="https://github.com/little-game-and-simple-software/idea-show/tree/gh-pages">Github</a>
+				<a href="http://ftp6403522.host122.sanfengyun.cn/forum.php">交流论坛</a>
+				<h2>创意留言区</h2>	
+				<div id="gitalk-container"></div>
 			</div>
+			
+		</div>
 
-			<h2>相关链接</h2>
-			<nav class="navbar navbar-expand-sm bg-light">
-				<ul class="navbar-nav">
-				  <li class="nav-item">
-					<a href="https://www.topys.cn/">TOPYS创意内容平台</a>
-				  </li>
-				  <li class="nav-item">
-					<a href="/录/index.html">资料库</a>
-				  </li>
-				</ul>
-			  </nav>
-
-			<div class="tip_box">
-				<p>作者是个技校生 没钱 没人脉 从小喜欢用电脑 自学编程,欢迎有热爱电脑的人加入管理</p>
-				<p>我不是以流量为王,不喜欢恰烂钱,希望这里没有营销号,只希望网民回归本心,明白自己喜欢什么,想要什么,想要做什么,对世界的深度思考</p>
-				<p>你可以在爱发电给我捐赠,来便于以后把网站移动到独立服务器上面</p>
-			</div>
-		</div>
-		<div class="saying_box">
-			<h2>名言警句</h2>
-			<p>尽信书不如无书——《孟子·尚书》</p>
-			<p>奥卡姆剃刀原理——14世纪英格兰的逻辑学家、圣方济各会修士奥卡姆的威廉（William of Occam） 意思是：能简就不要繁</p>
-		</div>
-		<div class="saying_box">
-			<h2>先人的智慧语句</h2>
-			<p>大道至简——《道德经》</p>
-			<p>日出而作，日落而息——《庄子·让王》</p>
-		</div>
-		<a href="friend.html">友情链接</a>
-		<a href="https://github.com/little-game-and-simple-software/idea-show/tree/gh-pages">Github</a>
-		<a href="http://ftp6403522.host122.sanfengyun.cn/forum.php">交流论坛</a>
-		<h2>创意留言区</h2>	
-		<div id="gitalk-container"></div>
+		
+		
 		<script>
 		const gitalk = new Gitalk({
 			clientID: '6ec626f73b045d108a95',
