@@ -5,16 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>站长的idea</title>
+    <style>
+        #left
+        {
+            border: solid 1px black;
+            display: inline-block;
+        }
+        #right
+        {
+            display: inline-block;
+        }
+    </style>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
     <!-- 待分类 -->
-    <span>创意类型</span>
-    <a href="">创造发明类</a>
-    <a href="">动画类</a>
-    <a href="">音乐类</a>
-    <a href="">医学类</a>
-    <a href="">科幻类</a>
+    <span>创意类型</span><br/>
+    <ol id="left">
+        <li><a href="">创造发明类</a></li>
+        <li><a href="">动画类</a></li>
+        <!-- todo 改成button onclick="inflate('音乐类/index.html')" -->
+        <li><a href="音乐类/index.html">音乐类</a></button></li>
+        <li><a href="">医学类</a></li>
+        <li><a href="">科幻类</a></li>
+    </ol>
+    <div id="right">
 
+    </div>
+    <script>
+        // todo 按钮用途的右半边页面现实
+        var right = document.getElementById("right")
+        var src = function inflate(p_src)
+        {
+            return p_src
+        }
+        $(function()
+        {
+            $("#right").append()
+        })
+    </script>
+
+
+<!-- 
     <h2>站长的小花样玩具</h2>
     <ol>
         <li>
@@ -47,7 +79,7 @@
     </ol>
 
     <h2>工农综艺特别节目</h2>
-    <p>挑战用挖掘机做蛋糕</p>
+    <p>挑战用挖掘机做蛋糕</p> -->
 
 </body>
 </html>
